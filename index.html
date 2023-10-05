@@ -45,7 +45,8 @@
             <img id="Scene-1" src="./Style/Images/Scene-1.jpg">
             <img id="Scene-2" src="./Style/Images/Scene-2.jpg">
             <img id="Scene-3" src="./Style/Images/Scene-3.jpg">
-            <!-- <img id="Scene-4" src="./Style/Images/Scene-4.jpg"> -->
+            <img id="Scene-4" src="./Style/Images/Scene-4.jpg">
+            <img id="Scene-5" src="./Style/Images/Scene-5.jpg">
 
         </a-assets>
 
@@ -62,7 +63,6 @@
         <!-- ############################################################ -->
         <!-- ############################################################ -->
         <!-- <a-entity camera="active: true ; zoom: 3"></a-entity> -->
-
         <!-- ############################################################ -->
         <!-- Group-0. -->
         <a-entity scale="1 1 1" rotation="0 0 0" class="groups" id="Group-0" visible="true">
@@ -126,6 +126,46 @@
                 the_dote="Name_of_dote: Dote-2 ; Group_to_activate: Group-2 ; The_rotation: 0">
             </a-plane>
 
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="Dote"
+                material="src: #Arrow-1; transparent:true" position="-4.16704 -1.7072 2.15133"
+                rotation="-77.02443527282196 73.15238649332785 -162.037621083153"
+                the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation: 0">
+            </a-plane>
+        </a-entity>
+        <!-- Group-4 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-4" visible="false">
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="Dote"
+                material="src: #Arrow-1; transparent:true" position="4.9666 -1.7072 -3.05092"
+                rotation="-71.51601903043422 -63.248811004491586 -19.092099649349294"
+                the_dote="Name_of_dote: Dote-3 ; Group_to_activate: Group-3 ; The_rotation: 0">
+            </a-plane>
+
+
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="Dote"
+                material="src: #Arrow-1; transparent:true" position="-2.2863 -1.24521 -0.60011"
+                rotation="-77.55327531772771 94.40969365047653 176.18337608713787"
+                the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation: 0">
+            </a-plane>
+
+
+
+
+
+        </a-entity>
+        <!-- Group-5 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-5" visible="false">
+
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="Dote"
+                material="src: #Arrow-1; transparent:true" position="2.40699 -1.7072 0.54156"
+                rotation="-62.60136869599375 -81.87051230403846 -5.706659639502999"
+                the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation: 0">
+            </a-plane>
+
+
+
         </a-entity>
 
         <!-- ############################################################ -->
@@ -172,6 +212,12 @@
                                 break;
                             case 'Dote-3':
                                 the_sky.setAttribute('src', '#Scene-3')
+                                break;
+                            case 'Dote-4':
+                                the_sky.setAttribute('src', '#Scene-4')
+                                break;
+                            case 'Dote-5':
+                                the_sky.setAttribute('src', '#Scene-5')
                                 break;
                             // case 'Dote-4':
                             //     the_sky.setAttribute('src', '#Scene-4')
